@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+/* Generic styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: 'Bangers', cursive;
+}
+
+h1,
+h2 {
+    letter-spacing: 0.1em;
+}
+
+.hero {
+    background: url('https://i.ytimg.com/vi/mYrKAMLbjYA/maxresdefault.jpg') center;
+    background-size: cover;
+    padding: 4rem 2rem;
+    /* grid styles */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+}
+
+.hero>* {
+    color: white;
+}
+
+.hero>h1 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.filterbutton {
+    align-content: center;
+}
+
+.games {
+    padding: 2rem;
+}
+
+.games>ul {
+    list-style-type: none;
+    width: 50%;
+    /* grid styles */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 1rem;
+}
+
+.games>ul>li {
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+}
+
+.games>ul>li>figure {
+    /* max-height: 220px; */
+    overflow: hidden;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    position: relative;
+}
+
+.games>ul>li>figure>img {
+    width: 100%;
+}
+
+.games>ul>li>figure>figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(74, 4, 42, .7);
+    width: 100%;
+}
+
+.games>ul>li>figure>figcaption>h3,
+h4 {
+    color: white;
+    padding: .75rem;
+    font-size: 1.25rem;
+}
+
+.imagesize {
+    width: 50%;
+    height: 50%;
+}
