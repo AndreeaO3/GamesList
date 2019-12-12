@@ -5,7 +5,7 @@ import GameList from './GameList';
 function App() {
   return (
     <div>
-      <section class="hero">
+      <section class="header">
         <h1>Oldiez but Goldiez</h1>
         <article>
           <h2>awesome games</h2>

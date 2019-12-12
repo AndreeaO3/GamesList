@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css'
+import './Games.scss'
 // import {BrowserRouter, Route} from 'react-router-dom';
 
 class App extends Component {
@@ -20,12 +20,12 @@ class App extends Component {
     render() {
 
         return (
-            <div>
+            
                 
-                <main class="wrapper">
-                    <section class="games">
-                        <ul>
-                            <li>
+                <div class="wrapper">
+                    {/* <section class="games"> */}
+                        
+                            
                                 <figure>
                                     <img class="imagesize"src={this.props.background_image} alt='background_image'/>
                                     <figcaption>
@@ -34,12 +34,12 @@ class App extends Component {
                                         <button onClick={this.handleClick}> Delete</button>
                                     </figcaption>
                                 </figure>
-                            </li>
-                        </ul>
-                    </section>
-                </main>
+                           
+                        
+                    {/* </section> */}
+                </div>
 
-            </div>
+  
         )
     }
 

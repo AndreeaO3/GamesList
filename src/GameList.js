@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Game from './Game.js';
 import { Route } from 'react-router-dom';
+import './Games.scss';
 
 
 
@@ -56,7 +57,7 @@ class GameList extends Component {
             <div>
                 <button class="filterbutton" onClick={() => this.filter(this.state.bool)}>{!this.state.bool ? "BEST" : "ALL"}</button>
                 <Route exact path="/">
-                    {this.state.list.length > 0 ? this.showGames() : null}
+                 <div className="games">{this.state.list.length > 0 ? this.showGames() : null}</div>
                 </Route>
                 {/* <Route path="/game/screenshots/:id" render={(props) => <DisplayScreenshots {...props} state={this.state.list} />}/> */}
             </div>
