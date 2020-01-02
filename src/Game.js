@@ -26,14 +26,14 @@ class App extends Component {
                     {/* <section class="games"> */}
                         
                             
-                                <figure>
+                                {/* <figure> */}
                                     <img class="imagesize"src={this.props.background_image} alt='background_image'/>
                                     <figcaption>
                                         <h3> {this.props.name}</h3>
                                         <h4> {this.props.rating}</h4>
                                         <button onClick={this.handleClick}> Delete</button>
                                     </figcaption>
-                                </figure>
+                                {/* </figure> */}
                            
                         
                     {/* </section> */}

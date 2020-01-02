@@ -36,28 +36,33 @@ h2 {
     padding-bottom: 1rem;
 }
 
-.games {
+.wrapper {
     padding: 2rem;
 }
 
 .games {
     list-style-type: none;
-    width: 100%;
-    /* grid styles */
     display: grid;
-    // grid-auto-columns: repeat(auto-fit, 100px);
+    grid-template-columns: repeat(auto-fit, 500px);
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    // width: 100%;
+    // /* grid styles */
+    // grid-auto-columns: repeat(auto-fit, minmax(100px, 1fr));
     // grid-row-gap: 10px;
     // grid-column-gap: 5px;
-    grid-gap: 1rem;
-    justify-content: center;
+    // grid-gap: 1rem;
 }
 
-.games>figure {
+.wrapper {
     border: 1px solid #ccc;
     border-radius: .3rem;
 }
 
-.games>figure {
+.wrapper {
     /* max-height: 220px; */
     overflow: hidden;
     border-top-left-radius: .3rem;
@@ -65,29 +70,32 @@ h2 {
     position: relative;
 }
 
-.games>figure>img {
-    width: 50%;
+.wrapper>img {
+    width: 66%;
 }
 
-.games>figure>figcaption {
+// .wrapper>figcaption {}
+.wrapper>figcaption>h3,
+h4 {
     position: absolute;
     bottom: 0;
     background-color: rgba(74, 4, 42, .7);
     width: 50%;
-}
-
-.games>figure>figcaption>h3,
-h4 {
     color: white;
     padding: .75rem;
     font-size: 1.25rem;
 }
 
 .imagesize {
-    width: 50%;
-    height: 50%;
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .wrapper {
-    width: 30%;
+    width: 50%;
 }
